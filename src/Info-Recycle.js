@@ -17,7 +17,10 @@ class RecycleInfo extends Component {
           >
             <Col className="project-col">
               <h1 className="project-name">React, Set, Recycle</h1>
-              <img className="project-img" src="/gameBig.png" />
+              <img
+                className="project-img"
+                src={process.env.PUBLIC_URL + "/gameBig.png"}
+              />
               <p>
                 Ready Set Recycle is a React game which uses the React-Konva
                 library. The objective of the game is to sort the bottles and
@@ -36,7 +39,10 @@ class RecycleInfo extends Component {
                 and Y coordinates.
               </p>
 
-              <img className="project-img" src="/ObjectImage.png" />
+              <img
+                className="project-img"
+                src={process.env.PUBLIC_URL + "/ObjectImage.png"}
+              />
 
               <a href="#"> (Click here to view the whole code on GitHub). </a>
               <p>
@@ -48,7 +54,10 @@ class RecycleInfo extends Component {
                 it glows red.
               </p>
 
-              <img className="project-img" src="/handleDrag.png" />
+              <img
+                className="project-img"
+                src={process.env.PUBLIC_URL + "/handleDrag.png"}
+              />
               <a href="#"> (Click here to view the whole code on GitHub). </a>
               <p>
                 The challenges I experienced in this project was primarily in

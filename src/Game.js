@@ -196,17 +196,17 @@ export default class Game extends Component {
         >
           <Layer>
             <ObjectImage
-              src="/grass.png"
+              src={process.env.PUBLIC_URL + "/grass.png"}
               height={window.innerHeight - 200}
               y={190}
             />
             <ObjectImage
-              src="/paperBin.png"
+              src={process.env.PUBLIC_URL + "/paperBin.png"}
               x={window.innerWidth - 250}
               y={window.innerHeight - 400}
             />
             <ObjectImage
-              src="/bottleBin.png"
+              src={process.env.PUBLIC_URL + "/bottleBin.png"}
               x={0}
               y={window.innerHeight - 400}
             />
@@ -217,7 +217,7 @@ export default class Game extends Component {
               items={"Bags"}
             />
             <Trash
-              src="/bottle.png"
+              src={process.env.PUBLIC_URL + "/bottle.png"}
               targetX={0}
               targetY={window.innerHeight - 400}
               items={"Bottles"}

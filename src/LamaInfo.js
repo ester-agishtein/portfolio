@@ -15,7 +15,10 @@ class LamaInfo extends Component {
           <Route exact path={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}>
             <Col className="project-col">
               <h1 className="project-name">Poke A Lama</h1>
-              <img className="project-img" src="/lamaScreenShot.png" />
+              <img
+                className="project-img"
+                src={process.env.PUBLIC_URL + "/lamaScreenShot.png"}
+              />
               <p>
                 Lamas. Fluffy, dopey, and just so pokable. This thought is what
                 inspired me to make the Poke A Lama game. The directive of the
@@ -39,7 +42,10 @@ class LamaInfo extends Component {
                 updates.
               </p>
 
-              <img className="project-img" src="/cssLama.png" />
+              <img
+                className="project-img"
+                src={process.env.PUBLIC_URL + "/cssLama.png"}
+              />
 
               <a href="#"> (Click here to view the whole code on GitHub). </a>
               <p>
@@ -48,7 +54,10 @@ class LamaInfo extends Component {
                 the sound component to play the corresponding mp3 files.
               </p>
 
-              <img className="project-img" src="/lamaPoke.png" />
+              <img
+                className="project-img"
+                src={process.env.PUBLIC_URL + "/lamaPoke.png"}
+              />
               <a href="#"> (Click here to view the whole code on GitHub). </a>
               <p>
                 Now that you know the secrets behind Poke A Lama, it’s time for

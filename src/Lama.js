@@ -77,12 +77,12 @@ class Lama extends Component {
             size="lg"
           >
             <div style={{ right: this.state.handPos }} className="moving-img">
-              <img src="/hand.png" />
+              <img src={process.env.PUBLIC_URL + "/hand.png"} />
             </div>
           </Button>
 
           <div style={{ right: this.state.lamaPos }} className="moving-img">
-            <img src="/lama.png" />
+            <img src={process.env.PUBLIC_URL + "/lama.png"} />
             <Sound url={this.state.mp3} playStatus={this.state.play} />
           </div>
         </div>
