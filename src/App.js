@@ -20,6 +20,31 @@ class App extends React.Component {
           </Route>
           <Route exact path={process.env.PUBLIC_URL + "/"}>
             <Col bsPrefix="componentCol">
+              <Row bsPrefix="projects">
+                <h1>My projects</h1>
+                <Link
+                  to={process.env.PUBLIC_URL + "/"}
+                  style={{ color: "white" }}
+                ></Link>
+                <ul>
+                  <li>
+                    <Link
+                      to={process.env.PUBLIC_URL + "/React-Set-Recycle-Info"}
+                      style={{ color: "white" }}
+                    >
+                      React, Set, Recycle!
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}
+                      style={{ color: "white" }}
+                    >
+                      Poke A Lama
+                    </Link>
+                  </li>
+                </ul>
+              </Row>
               <Row bsPrefix="info">
                 <h1>Ester S. Agishtein</h1>
                 <p>
@@ -30,32 +55,6 @@ class App extends React.Component {
                   passionate about the development of technology which
                   contributes to storytelling and human connection.
                 </p>
-              </Row>
-
-              <Row bsPrefix="projects">
-                <h1>My projects</h1>
-                <Link
-                  to={process.env.PUBLIC_URL + "/"}
-                  style={{ color: "gold" }}
-                ></Link>
-                <ul>
-                  <li>
-                    <Link
-                      to={process.env.PUBLIC_URL + "/React-Set-Recycle-Info"}
-                      style={{ color: "gold" }}
-                    >
-                      React, Set, Recycle!
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}
-                      style={{ color: "gold" }}
-                    >
-                      Poke A Lama
-                    </Link>
-                  </li>
-                </ul>
               </Row>
             </Col>
           </Route>
