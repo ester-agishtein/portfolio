@@ -211,7 +211,7 @@ export default class Game extends Component {
               y={window.innerHeight - 400}
             />
             <Trash
-              src="/paperBag.png"
+              src={process.env.PUBLIC_URL + "/paperBag.png"}
               targetX={window.innerWidth - 250}
               targetY={window.innerHeight - 400}
               items={"Bags"}
