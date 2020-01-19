@@ -29,12 +29,11 @@ class RecycleInfo extends Component {
                 as to better understand how to build interactive applications.
               </p>
               <h2>The Code</h2>
-              <hr />
+
               <p>
-                <br />
                 The project can be broken down into two main parts. The
                 recycling bins and the trash. To make the bins, I made a
-                reusable component, ObjectImage which takes a file path and X
+                reusable component, ObjectImage, which takes a file path and X
                 and Y coordinates.
               </p>
 
@@ -67,10 +66,10 @@ class RecycleInfo extends Component {
               <p>
                 The challenges I experienced in this project was primarily in
                 dealing with React-Konva. The rules about layering were
-                difficult to navigate and, I think for this project, was not
+                difficult to navigate and, I think for this project, were not
                 worth the hassle. In the future I would use a series of buttons
                 instead, for I believe that would be simpler and more elegant.
-                However, it was a fun library to learn and defiantly has some
+                However, it was a fun library to learn and definitely has some
                 cool features.
                 <br />
                 Wanna give it a shot?
