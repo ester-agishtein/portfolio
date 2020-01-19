@@ -35,23 +35,25 @@ class App extends React.Component {
 
               <Col className="projects">
                 <h1>My projects</h1>
-
+                <Link
+                  to={process.env.PUBLIC_URL + "/"}
+                  style={{ color: "gold" }}
+                ></Link>
                 <ul>
-                  <li>
-                    <Link to="/" style={{ color: "gold" }}>
-                      Home
-                    </Link>
-                  </li>
+                  <li></li>
                   <li>
                     <Link
-                      to="/React-Set-Recycle-Info"
+                      to={process.env.PUBLIC_URL + "/React-Set-Recycle-Info"}
                       style={{ color: "gold" }}
                     >
                       React, Set, Recycle!
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Poke-A-Lama-Info" style={{ color: "gold" }}>
+                    <Link
+                      to={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}
+                      style={{ color: "gold" }}
+                    >
                       Poke A Lama
                     </Link>
                   </li>
