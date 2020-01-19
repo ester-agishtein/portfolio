@@ -70,6 +70,7 @@ class Lama extends Component {
             <h2>Click the hand to poke the lama.</h2>
             {this.state.text}
           </div>
+
           <Button
             bsPrefix="lamaButton"
             onClick={this.pokeLama}
@@ -83,8 +84,8 @@ class Lama extends Component {
 
           <div style={{ right: this.state.lamaPos }} className="moving-img">
             <img src={process.env.PUBLIC_URL + "/lama.png"} />
-            <Sound url={this.state.mp3} playStatus={this.state.play} />
           </div>
+          <Sound url={this.state.mp3} playStatus={this.state.play} />
         </div>
       </>
     );

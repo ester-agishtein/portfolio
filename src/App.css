@@ -2,55 +2,27 @@
 
 .componentCol {
   height: -webkit-fill-available;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
 }
-
-@media only screen and (max-width: 600px) {
-  .app {
-    /* background-image: -webkit-linear-gradient(45deg, gray 40%, #ea5d3c 45%); */
-    background-color: #1d2752;
-    color: white;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    overflow: hidden;
-  }
-  .info {
-    text-align: center;
-    height: 10vw;
-    font-size: 15px;
-    margin-bottom: 90%;
-  }
-  .projects {
-    margin-top: 40vw;
-    align-self: center;
-  }
+.app {
+  text-align: center;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-@media only screen and (min-width: 599px) {
-  .app {
-    background-image: -webkit-linear-gradient(45deg, gray 50%, #ea5d3c 50%);
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    top: 0;
-    left: 0;
-    min-width: 100vw;
-    min-height: 100vw;
-    overflow: hidden;
-  }
-  .info {
-    text-align: center;
-    margin-top: 12vw;
-    margin-right: 5vw;
-  }
-  .projects {
-    margin-top: 37vw;
-    padding-left: 8vw;
-  }
+.appBody {
+  position: absolute;
+  color: white;
+  left: 25%;
+  top: 35%;
+  width: 50%;
+}
+li {
+  list-style-type: none;
+}
+html,
+body {
+  background-color: #1d2752;
+  width: 100%;
+  height: 100%;
 }
 
 .projects h1 {
@@ -75,8 +47,8 @@
   }
 }
 .project-template {
-  background-color: white;
   text-align: center;
+  background-color: white;
 }
 @media only screen and (max-width: 599px) {
   .project-template p {
@@ -116,11 +88,12 @@
   margin-top: 2vw;
   margin-bottom: 2vw;
 }
+
 .lamaText {
+  background-color: darkblue;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  border: 1px solid black;
+  box-shadow: 10px 10px grey;
 }
 .moving-img {
   transition: all 1s ease-in-out;
