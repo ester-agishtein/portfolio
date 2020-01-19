@@ -12,7 +12,7 @@ class Lama extends Component {
       lamaPos: "0vw",
       text: "Oooo Poke the Lamaaa!",
       play: "PLAYING",
-      mp3: "/whatUp.mp3"
+      mp3: process.env.PUBLIC_URL + "/whatUp.mp3"
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -42,7 +42,7 @@ class Lama extends Component {
         this.setState({
           lamaPos: "-50vw",
           text: "Oh no! Come back lama!",
-          mp3: "/scream.mp3",
+          mp3: process.env.PUBLIC_URL + "/scream.mp3",
           play: "PLAYING",
           play: "PAUSED",
           play: "PLAYING"
@@ -52,7 +52,7 @@ class Lama extends Component {
       // hand pokes lama
       this.setState({
         handPos: "65vw",
-        mp3: "/whatUp.mp3",
+        mp3: process.env.PUBLIC_URL + "/whatUp.mp3",
         lamaPos: "0vw",
         text: "Oooo Poke the Lamaaa!",
         play: "PLAYING",
