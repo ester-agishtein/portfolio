@@ -12,7 +12,7 @@
     background-image: -webkit-linear-gradient(45deg, gray 50%, #ea5d3c 50%);
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
-    background-color: #ea5d3c;
+
     top: 0;
     left: 0;
     min-width: 100%;
@@ -21,7 +21,7 @@
   }
   .info {
     text-align: center;
-    margin-top: 13vw;
+    height: 50%;
     font-size: 15px;
   }
   .projects {
