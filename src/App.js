@@ -10,7 +10,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <h1>I'm breathing!!</h1>
         <BrowserRouter>
           <Route path={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}>
             <LamaInfo />
