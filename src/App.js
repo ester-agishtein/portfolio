@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import RecycleInfo from "./Info-Recycle";
 import LamaInfo from "./LamaInfo";
-
+import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 class App extends React.Component {
@@ -20,7 +20,7 @@ class App extends React.Component {
           </Route>
           <Route exact path={process.env.PUBLIC_URL + "/"}>
             <Col bsPrefix="componentCol">
-              <Col className="info">
+              <Row bsPrefix="info">
                 <h1>Ester S. Agishtein</h1>
                 <p>
                   I am senior C.S student at Touro college and am a MediaTech
@@ -30,9 +30,9 @@ class App extends React.Component {
                   passionate about the development of technology which
                   contributes to storytelling and human connection.
                 </p>
-              </Col>
+              </Row>
 
-              <Col className="projects">
+              <Row bsPrefix="projects">
                 <h1>My projects</h1>
                 <Link
                   to={process.env.PUBLIC_URL + "/"}
@@ -56,7 +56,7 @@ class App extends React.Component {
                     </Link>
                   </li>
                 </ul>
-              </Col>
+              </Row>
             </Col>
           </Route>
         </BrowserRouter>
