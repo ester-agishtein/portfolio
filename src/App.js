@@ -11,15 +11,15 @@ class App extends React.Component {
     return (
       <div className="app">
         <h1>I'm breathing!!</h1>
-        {/* <BrowserRouter>
-          <Route path="/Poke-A-Lama-Info">
+        <BrowserRouter>
+          <Route path={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}>
             <LamaInfo />
           </Route>
 
-          <Route path="/React-Set-Recycle-Info">
+          <Route path={process.env.PUBLIC_URL + "/React-Set-Recycle-Info"}>
             <RecycleInfo />
           </Route>
-          <Route exact path="/">
+          <Route exact path={process.env.PUBLIC_URL + "/"}>
             <Col bsPrefix="componentCol">
               <Col className="info">
                 <h1>Ester S. Agishtein</h1>
@@ -59,7 +59,7 @@ class App extends React.Component {
               </Col>
             </Col>
           </Route>
-        </BrowserRouter> */}
+        </BrowserRouter>
       </div>
     );
   }
