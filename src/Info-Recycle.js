@@ -11,7 +11,10 @@ class RecycleInfo extends Component {
     return (
       <div className="project-template">
         <BrowserRouter>
-          <Route exact path="/React-Set-Recycle-Info">
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/React-Set-Recycle-Info"}
+          >
             <Col className="project-col">
               <h1 className="project-name">React, Set, Recycle</h1>
               <img className="project-img" src="/gameBig.png" />
@@ -59,7 +62,7 @@ class RecycleInfo extends Component {
                 Wanna give it a shot?
               </p>
               <Link
-                to="/React-Set-Recycle-Info/Game"
+                to={process.env.PUBLIC_URL + "/React-Set-Recycle-Info/Game"}
                 style={{
                   color: "black",
                   fontSize: "10vw"
@@ -70,7 +73,7 @@ class RecycleInfo extends Component {
             </Col>
           </Route>
 
-          <Route path="/React-Set-Recycle-Info/Game">
+          <Route path={process.env.PUBLIC_URL + "/React-Set-Recycle-Info/Game"}>
             <div className="app">
               <Col bsPrefix="componentCol">
                 <Game />
@@ -78,7 +81,10 @@ class RecycleInfo extends Component {
             </div>
           </Route>
 
-          <Link to="/React-Set-Recycle-Info/" style={{ color: "black" }}></Link>
+          <Link
+            to={process.env.PUBLIC_URL + "/React-Set-Recycle-Info/"}
+            style={{ color: "black" }}
+          ></Link>
         </BrowserRouter>
       </div>
     );

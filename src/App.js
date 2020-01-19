@@ -40,7 +40,6 @@ class App extends React.Component {
                   style={{ color: "gold" }}
                 ></Link>
                 <ul>
-                  <li></li>
                   <li>
                     <Link
                       to={process.env.PUBLIC_URL + "/React-Set-Recycle-Info"}

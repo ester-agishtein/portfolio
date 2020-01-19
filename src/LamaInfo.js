@@ -12,7 +12,7 @@ class LamaInfo extends Component {
     return (
       <div className="project-template">
         <BrowserRouter>
-          <Route exact path="/Poke-A-Lama-Info">
+          <Route exact path={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}>
             <Col className="project-col">
               <h1 className="project-name">Poke A Lama</h1>
               <img className="project-img" src="/lamaScreenShot.png" />
@@ -28,7 +28,7 @@ class LamaInfo extends Component {
                 component. Thus, when you poke the lama, you get to hear him
                 scream.
               </p>
-              <h2 style={{}}>The Code</h2>
+              <h2>The Code</h2>
 
               <p>
                 Here's how I did it:
@@ -58,7 +58,7 @@ class LamaInfo extends Component {
               </p>
 
               <Link
-                to="/Poke-A-Lama-Info/Game"
+                to={process.env.PUBLIC_URL + "/Poke-A-Lama-Info/Game"}
                 style={{
                   color: "black",
                   fontSize: "10vw"
@@ -69,7 +69,7 @@ class LamaInfo extends Component {
             </Col>
           </Route>
 
-          <Route path="/Poke-A-Lama-Info/Game">
+          <Route path={process.env.PUBLIC_URL + "/Poke-A-Lama-Info/Game"}>
             <div className="app">
               <Col bsPrefix="componentCol">
                 <Lama />
@@ -77,7 +77,10 @@ class LamaInfo extends Component {
             </div>
           </Route>
 
-          <Link to="/Poke-A-Lama-Info/" style={{ color: "black" }}></Link>
+          <Link
+            to={process.env.PUBLIC_URL + "/Poke-A-Lama-Info/"}
+            style={{ color: "black" }}
+          ></Link>
         </BrowserRouter>
       </div>
     );
