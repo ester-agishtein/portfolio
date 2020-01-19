@@ -31,7 +31,6 @@ class RecycleInfo extends Component {
               <h2>The Code</h2>
               <hr />
               <p>
-                Here's how I did it:
                 <br />
                 The project can be broken down into two main parts. The
                 recycling bins and the trash. To make the bins, I made a
@@ -44,7 +43,10 @@ class RecycleInfo extends Component {
                 src={process.env.PUBLIC_URL + "/ObjectImage.png"}
               />
 
-              <a href="#"> (Click here to view the whole code on GitHub). </a>
+              <a href="https://github.com/ester-agishtein/portfolio/blob/1613e8b439cda3301df9ce95ea1cda358366d424/src/Game.js#L8-L54">
+                {" "}
+                (Click here to view the whole code on GitHub).{" "}
+              </a>
               <p>
                 For the bottles and bags, I made a Trash object which takes a
                 file path (for the image), the corresponding coordinates to the
@@ -58,7 +60,10 @@ class RecycleInfo extends Component {
                 className="project-img"
                 src={process.env.PUBLIC_URL + "/handleDrag.png"}
               />
-              <a href="#"> (Click here to view the whole code on GitHub). </a>
+              <a href="https://github.com/ester-agishtein/portfolio/blob/1613e8b439cda3301df9ce95ea1cda358366d424/src/Game.js#L85-L132">
+                {" "}
+                (Click here to view the whole code on GitHub).{" "}
+              </a>
               <p>
                 The challenges I experienced in this project was primarily in
                 dealing with React-Konva. The rules about layering were

@@ -34,20 +34,22 @@ class LamaInfo extends Component {
               <h2>The Code</h2>
 
               <p>
-                Here's how I did it:
                 <br />
                 The project can be broken down into two main parts. The CSS and
                 the pokeLama function. The CSS uses the transition property to
                 allow the image to move smoothly when its coordinates are
-                updates.
+                updated.
               </p>
 
               <img
                 className="project-img"
-                src={process.env.PUBLIC_URL + "/cssLama.png"}
+                src={process.env.PUBLIC_URL + "/lamaCSS.png"}
               />
 
-              <a href="#"> (Click here to view the whole code on GitHub). </a>
+              <a href="https://github.com/ester-agishtein/portfolio/blob/1613e8b439cda3301df9ce95ea1cda358366d424/src/App.css#L120-L123">
+                {" "}
+                (Click here to view the whole code on GitHub).{" "}
+              </a>
               <p>
                 The coordinates get updated in the pokeLama function when the
                 hand (acting as a button) is clicked. PokeLama also initiates
@@ -58,7 +60,10 @@ class LamaInfo extends Component {
                 className="project-img"
                 src={process.env.PUBLIC_URL + "/lamaPoke.png"}
               />
-              <a href="#"> (Click here to view the whole code on GitHub). </a>
+              <a href="https://github.com/ester-agishtein/portfolio/blob/1613e8b439cda3301df9ce95ea1cda358366d424/src/Lama.js#L34-L63">
+                {" "}
+                (Click here to view the whole code on GitHub).{" "}
+              </a>
               <p>
                 Now that you know the secrets behind Poke A Lama, it’s time for
                 a crucial question.
