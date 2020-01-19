@@ -9,7 +9,10 @@
 
 @media only screen and (max-width: 600px) {
   .app {
-    background-color: gray;
+    background-image: -webkit-linear-gradient(45deg, gray 50%, #ea5d3c 50%);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    /* background-color: gray; */
     top: 0;
     left: 0;
     min-width: 100%;
@@ -18,11 +21,11 @@
   }
   .info {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 8%;
     font-size: 15px;
   }
   .projects {
-    margin-top: 40%;
+    margin-top: 43%;
     align-self: center;
   }
 }
@@ -39,11 +42,11 @@
   }
   .info {
     text-align: center;
-    margin-top: 10vw;
+    margin-top: 12vw;
     margin-right: 5vw;
   }
   .projects {
-    margin-top: 35vw;
+    margin-top: 37vw;
     padding-left: 8vw;
   }
 }
