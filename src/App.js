@@ -41,7 +41,6 @@ class App extends React.Component {
                   <li>
                     <Link
                       to={process.env.PUBLIC_URL + "/React-Set-Recycle-Info"}
-                      target="_blank"
                       style={{ color: "gray", fontSize: "xx-large" }}
                     >
                       React, Set, Recycle!
@@ -50,7 +49,6 @@ class App extends React.Component {
                   <li>
                     <Link
                       to={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}
-                      target="_blank"
                       style={{ color: "gray", fontSize: "xx-large" }}
                     >
                       Poke A Lama

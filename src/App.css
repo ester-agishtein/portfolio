@@ -8,9 +8,6 @@
   color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-li {
-  list-style: none;
-}
 
 hr {
   display: block;
@@ -39,6 +36,9 @@ body {
   .project-template p {
     position: relative;
     margin: 4vw;
+  }
+  li {
+    list-style: none;
   }
   .appBody {
     position: absolute;
