@@ -71,18 +71,22 @@ class Lama extends Component {
             {this.state.text}
           </div>
 
-          <Button
-            bsPrefix="lamaButton"
-            onClick={this.pokeLama}
-            variant="info"
-            size="lg"
-          >
-            <div style={{ right: this.state.handPos }} className="moving-img">
-              <img src={process.env.PUBLIC_URL + "/hand.png"} />
+          <Button bsPrefix="lamaButton" onClick={this.pokeLama}>
+            <div
+              style={{
+                right: this.state.handPos,
+                top: "50%"
+              }}
+              className="moving-img"
+            >
+              <img src={process.env.PUBLIC_URL + "/hand.png"} width="80%" />
             </div>
           </Button>
 
-          <div style={{ right: this.state.lamaPos }} className="moving-img">
+          <div
+            style={{ right: this.state.lamaPos, top: "30%" }}
+            className="moving-img"
+          >
             <img src={process.env.PUBLIC_URL + "/lama.png"} />
           </div>
           <Sound url={this.state.mp3} playStatus={this.state.play} />
