@@ -76,6 +76,7 @@ class RecycleInfo extends Component {
               </p>
               <Link
                 to={process.env.PUBLIC_URL + "/React-Set-Recycle-Info/Game"}
+                target="_blank"
                 style={{
                   color: "black",
                   fontSize: "10vw"

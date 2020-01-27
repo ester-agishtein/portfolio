@@ -71,6 +71,7 @@ class LamaInfo extends Component {
 
               <Link
                 to={process.env.PUBLIC_URL + "/Poke-A-Lama-Info/Game"}
+                target="_blank"
                 style={{
                   color: "black",
                   fontSize: "10vw"
