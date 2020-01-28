@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Konva from "konva";
 import { Stage, Layer, Image } from "react-konva";
 
-var bottleCount = 0;
-var bagCount = 0;
-var amount = 3;
+const amount = 3;
+var count = 0;
+
 class ObjectImage extends React.Component {
   constructor(props) {
     super(props);
@@ -57,7 +57,8 @@ class Trash extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      image: null
+      image: null,
+      url: ""
     };
   }
 
@@ -116,18 +117,10 @@ class Trash extends React.Component {
       e.target.y() > targetYLowerRange
     ) {
       e.target.shadowColor("yellow");
-      if (this.props.items == "Bottles") {
-        bottleCount++;
-      }
-      if (this.props.items == "Bags") {
-        bagCount++;
-      }
+
+      count++;
     } else {
       e.target.shadowColor("red");
-      if (this.props.items == "Bottles") bottleCount += 0;
-      if (this.props.items == "Bags") bagCount += 0;
-      console.log("bottles = ", bagCount);
-      console.log("bags = ", bagCount);
     }
   };
 
@@ -152,6 +145,7 @@ class Trash extends React.Component {
             onDragEnd={this.handleDragEnd}
           />
         ))}
+        <ObjectImage src={this.state.url} />
       </>
     );
   }
@@ -162,9 +156,7 @@ export default class Game extends Component {
     super(props);
     this.state = {
       width: 0,
-      height: 0,
-      intervalId: "",
-      finished: ""
+      height: 0
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -185,10 +177,11 @@ export default class Game extends Component {
   render() {
     return (
       <div className="game">
-        <h1 className="gameInstructions">Welcome to the Recyling game! </h1>
+        <h1 className="gameInstructions">Welcome to the recyling game! </h1>
         <h2 className="gameInstructions">
           To win, put the bottles in the blue bin and the bags in the green!
         </h2>
+
         <Stage
           className="stage"
           width={window.innerWidth}
@@ -214,13 +207,11 @@ export default class Game extends Component {
               src={process.env.PUBLIC_URL + "/paperBag.png"}
               targetX={window.innerWidth - 250}
               targetY={window.innerHeight - 400}
-              items={"Bags"}
             />
             <Trash
               src={process.env.PUBLIC_URL + "/bottle.png"}
               targetX={0}
               targetY={window.innerHeight - 400}
-              items={"Bottles"}
             />
           </Layer>
         </Stage>
