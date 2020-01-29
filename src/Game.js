@@ -197,7 +197,7 @@ export default class Game extends Component {
               src={process.env.PUBLIC_URL + "/paperBin.png"}
               x={window.innerWidth - 250}
               y={window.innerHeight - 400}
-              width={window.innerWidth / 3}
+              width={window.innerWidth - window.innerWidth / 10}
               height={window.innerHeight / 3}
             />
             <ObjectImage
