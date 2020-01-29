@@ -56,6 +56,7 @@ body {
 }
 .project-template {
   text-align: center;
+  color: black;
   background-color: white;
 }
 @media only screen and (max-width: 599px) {
@@ -101,16 +102,11 @@ body {
 /*react Konva game */
 
 /*Lama */
-.lamaGame {
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-}
 
 .lamaText {
-  background-color: darkblue;
   color: white;
-  border: 1px solid black;
-  box-shadow: 10px 10px grey;
+  background-color: #1d2752;
+  border: 5px solid black;
 }
 .moving-img {
   transition: all 1s ease-in-out;

@@ -197,21 +197,25 @@ export default class Game extends Component {
               src={process.env.PUBLIC_URL + "/paperBin.png"}
               x={window.innerWidth - 250}
               y={window.innerHeight - 400}
+              width={window.innerWidth / 3}
+              height={window.innerHeight / 3}
             />
             <ObjectImage
               src={process.env.PUBLIC_URL + "/bottleBin.png"}
               x={0}
               y={window.innerHeight - 400}
+              width={window.innerWidth / 3}
+              height={window.innerHeight / 3}
             />
             <Trash
               src={process.env.PUBLIC_URL + "/paperBag.png"}
-              targetX={window.innerWidth - 250}
-              targetY={window.innerHeight - 400}
+              targetX={window.innerWidth - window.innerWidth / 10}
+              targetY={window.innerHeight / 2}
             />
             <Trash
               src={process.env.PUBLIC_URL + "/bottle.png"}
               targetX={0}
-              targetY={window.innerHeight - 400}
+              targetY={window.innerHeight / 2}
             />
           </Layer>
         </Stage>
