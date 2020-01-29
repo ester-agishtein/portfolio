@@ -197,7 +197,7 @@ export default class Game extends Component {
               src={process.env.PUBLIC_URL + "/paperBin.png"}
               x={window.innerWidth - 250}
               y={window.innerHeight - 400}
-              width={window.innerWidth}
+              width={window.innerWidth / 3}
               height={window.innerHeight / 3}
             />
             <ObjectImage
@@ -214,7 +214,7 @@ export default class Game extends Component {
             />
             <Trash
               src={process.env.PUBLIC_URL + "/bottle.png"}
-              targetX={0}
+              targetX={window.innerWidth - window.innerWidth}
               targetY={window.innerHeight / 2}
             />
           </Layer>
