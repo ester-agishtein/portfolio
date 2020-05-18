@@ -35,7 +35,7 @@ body {
 @media only screen and (min-width: 600px) {
   .project-template p {
     position: relative;
-    margin: 4vw;
+    margin: 1vw;
   }
   li {
     list-style: none;
@@ -85,22 +85,6 @@ body {
 }
 /*Projects Info*/
 
-/*react Konva game */
-.game {
-  background: lightblue;
-  width: 100%;
-  height: 100%;
-  clip: auto;
-  position: fixed;
-}
-.stage {
-  overflow: hidden;
-}
-#check {
-  left: 50%;
-}
-/*react Konva game */
-
 /*Lama */
 
 .lamaText {
@@ -120,3 +104,51 @@ body {
   outline: none;
 }
 /*Lama */
+
+/*API*/
+.apiBody {
+  background-image: url("./backimg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.charecters {
+  background-color: white;
+  text-align: justify;
+  border-style: solid;
+}
+.buttons {
+  width: 50vw;
+  height: 25vw;
+  overflow-x: hidden;
+  position: relative;
+  top: 4vw;
+  margin-left: 2vw;
+}
+.charInfo {
+  width: 50vw;
+  height: 30vw;
+  overflow-x: hidden;
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.apiInfo {
+  width: 50vw;
+  height: 30vw;
+  background-color: gray;
+  left: 25vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: black;
+}
+.apiInfoText {
+  padding-right: 15vw;
+  padding-left: 15vw;
+}

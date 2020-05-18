@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import RecycleInfo from "./Info-Recycle";
+import ApiInfo from "./Api-Info";
 import LamaInfo from "./LamaInfo";
 import Col from "react-bootstrap/Col";
 
@@ -14,8 +14,8 @@ class App extends React.Component {
             <LamaInfo />
           </Route>
 
-          <Route path={process.env.PUBLIC_URL + "/React-Set-Recycle-Info"}>
-            <RecycleInfo />
+          <Route path={process.env.PUBLIC_URL + "/Air-Bender-Api-Info"}>
+            <ApiInfo />
           </Route>
           <Route exact path={process.env.PUBLIC_URL + "/"}>
             <Col bsPrefix="componentCol">
@@ -40,10 +40,10 @@ class App extends React.Component {
                 <ul>
                   <li>
                     <Link
-                      to={process.env.PUBLIC_URL + "/React-Set-Recycle-Info"}
+                      to={process.env.PUBLIC_URL + "/Air-Bender-Api-Info"}
                       style={{ color: "gray", fontSize: "xx-large" }}
                     >
-                      React, Set, Recycle!
+                      The Last Airbender API
                     </Link>
                   </li>
                   <li>

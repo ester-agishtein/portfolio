@@ -33,7 +33,7 @@ class Lama extends Component {
 
   pokeLama = () => {
     // we are in starting position
-    if (this.state.handPos == "65vw") {
+    if (this.state.handPos === "65vw") {
       this.setState({
         handPos: "17vw",
         play: "PAUSED"
@@ -79,7 +79,11 @@ class Lama extends Component {
               }}
               className="moving-img"
             >
-              <img src={process.env.PUBLIC_URL + "/hand.png"} width="80%" />
+              <img
+                src={process.env.PUBLIC_URL + "/hand.png"}
+                width="80%"
+                alt="hand"
+              />
             </div>
           </Button>
 
@@ -87,7 +91,7 @@ class Lama extends Component {
             style={{ right: this.state.lamaPos, top: "30%" }}
             className="moving-img"
           >
-            <img src={process.env.PUBLIC_URL + "/lama.png"} />
+            <img src={process.env.PUBLIC_URL + "/lama.png"} alt="lama" />
           </div>
           <Sound url={this.state.mp3} playStatus={this.state.play} />
         </div>

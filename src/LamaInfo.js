@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Col from "react-bootstrap/Col";
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import App from "./App";
 import Lama from "./Lama";
 class LamaInfo extends Component {
   constructor(props) {
@@ -17,6 +16,7 @@ class LamaInfo extends Component {
               <h1 className="project-name">Poke A Lama</h1>
               <img
                 className="project-img"
+                alt="scrnShot"
                 src={process.env.PUBLIC_URL + "/lamaScreenShot.png"}
               />
               <p>
@@ -42,6 +42,7 @@ class LamaInfo extends Component {
 
               <img
                 className="project-img"
+                alt="css"
                 src={process.env.PUBLIC_URL + "/lamaCSS.png"}
               />
 
@@ -57,6 +58,7 @@ class LamaInfo extends Component {
 
               <img
                 className="project-img"
+                alt="poke"
                 src={process.env.PUBLIC_URL + "/lamaPoke.png"}
               />
               <a href="https://github.com/ester-agishtein/portfolio/blob/1613e8b439cda3301df9ce95ea1cda358366d424/src/Lama.js#L34-L63">
@@ -94,6 +96,12 @@ class LamaInfo extends Component {
             style={{ color: "black" }}
           ></Link>
         </BrowserRouter>
+        <footer>
+          <h10>
+            Credit: Paige Gorry, Avatar the Last Airbender API,
+            https://last-airbender-api.herokuapp.com/
+          </h10>
+        </footer>
       </div>
     );
   }
