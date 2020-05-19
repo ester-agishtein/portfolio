@@ -36,7 +36,7 @@ class App extends React.Component {
                 <hr style={{ width: "60%" }} />
                 <hr style={{ width: "80%" }} />
                 <hr />
-                <Link to={process.env.PUBLIC_URL + "/#"}></Link>
+                <Link to={process.env.PUBLIC_URL + "/"}></Link>
                 <ul>
                   <li>
                     <Link
