@@ -10,14 +10,14 @@ class App extends React.Component {
     return (
       <div className="app">
         <BrowserRouter>
-          <Route path={process.env.PUBLIC_URL + "/#Poke-A-Lama-Info"}>
+          <Route path={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}>
             <LamaInfo />
           </Route>
 
-          <Route path={process.env.PUBLIC_URL + "/#Air-Bender-Api-Info"}>
+          <Route path={process.env.PUBLIC_URL + "/Air-Bender-Api-Info"}>
             <ApiInfo />
           </Route>
-          <Route exact path={process.env.PUBLIC_URL + "/#"}>
+          <Route exact path={process.env.PUBLIC_URL + "/"}>
             <Col bsPrefix="componentCol">
               <div className="appBody">
                 <h1>Ester S. Agishtein</h1>
@@ -40,7 +40,7 @@ class App extends React.Component {
                 <ul>
                   <li>
                     <Link
-                      to={process.env.PUBLIC_URL + "/#Air-Bender-Api-Info"}
+                      to={process.env.PUBLIC_URL + "/Air-Bender-Api-Info"}
                       style={{ color: "gray", fontSize: "xx-large" }}
                     >
                       The Last Airbender API
@@ -48,7 +48,7 @@ class App extends React.Component {
                   </li>
                   <li>
                     <Link
-                      to={process.env.PUBLIC_URL + "/#Poke-A-Lama-Info"}
+                      to={process.env.PUBLIC_URL + "/Poke-A-Lama-Info"}
                       style={{ color: "gray", fontSize: "xx-large" }}
                     >
                       Poke A Lama

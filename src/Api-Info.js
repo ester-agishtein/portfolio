@@ -11,7 +11,7 @@ class ApiInfo extends Component {
     return (
       <div className="project-template">
         <BrowserRouter>
-          <Route exact path={process.env.PUBLIC_URL + "/Air-Bender-Api-Info"}>
+          <Route exact path={process.env.PUBLIC_URL + "/#Air-Bender-Api-Info"}>
             <Col className="project-col">
               <h1 className="project-name">
                 Avatar the Last Airbender Database
