@@ -96,12 +96,6 @@ class LamaInfo extends Component {
             style={{ color: "black" }}
           ></Link>
         </BrowserRouter>
-        <footer>
-          <h10>
-            Credit: Paige Gorry, Avatar the Last Airbender API,
-            https://last-airbender-api.herokuapp.com/
-          </h10>
-        </footer>
       </div>
     );
   }
