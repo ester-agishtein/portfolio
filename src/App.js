@@ -23,10 +23,10 @@ class App extends React.Component {
                 <h1>Ester S. Agishtein</h1>
                 <br />
                 <p>
-                  I am senior C.S student at Touro college and am a MediaTech
-                  intern at NBCUniversal. I currently work primarily with React
-                  and am interested in front-end development and web
-                  technologies. I am fascinated by the media industry, and am
+                  I am senior C.S student at Touro college.
+                  I have worked primarily with React
+                  and am interested in full-stack development.
+                  I am fascinated by the media industry, and am
                   passionate about the development of technology which
                   contributes to storytelling and human connection.
                 </p>
