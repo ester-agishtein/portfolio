@@ -1,7 +1,7 @@
 ## **React Portfolio**
 
 This is a React project that is hosted on GitHub pages. The project includes two sub-projects: a lama that screams when poked, and an Avatar the Last Airbender API info display. The goal of this application was to demonstrate a knowledge and understanding of React. 
-[Project can be viewed live here](https://ester-agishtein.github.io/portfolio/).
+[Project can be viewed live here](http://ester-agishtein-react-portfolio.s3-website.us-east-2.amazonaws.com/Air-Bender-Api-Info/Api).
 
 ## Technologies 
   - React
